@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_recycler_rows"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageButton
+        android:id="@+id/main_recycler_favorite"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_recycler_tv_meal"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:src="@drawable/ic_add_favorites"/>
+
+    <ImageView
+        android:id="@+id/main_imageview_recycler"
+        android:layout_width="146dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/main_select_recycler_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/dempet_sort"
+        android:text="Add To Meal"
+        android:textColor="@color/white"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_imageview_recycler" />
+
+    <TextView
+        android:id="@+id/main_recycler_tv"
+        android:layout_width="237dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Food Name"
+        android:textSize="24dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/main_imageview_recycler"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="408dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_recycler_tv_calories" />
+
+    <TextView
+        android:id="@+id/main_recycler_tv_calories"
+        android:layout_width="175dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Calories"
+        app:layout_constraintStart_toEndOf="@+id/main_imageview_recycler"
+        app:layout_constraintTop_toBottomOf="@+id/main_recycler_tv_diet" />
+
+    <TextView
+        android:id="@+id/main_recycler_tv_diet"
+        android:layout_width="175dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Diet"
+        app:layout_constraintStart_toEndOf="@+id/main_imageview_recycler"
+        app:layout_constraintTop_toBottomOf="@+id/main_recycler_tv_meal" />
+
+    <TextView
+        android:id="@+id/main_recycler_tv_meal"
+        android:layout_width="235dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="HealthLabels"
+        app:layout_constraintStart_toEndOf="@+id/main_imageview_recycler"
+        app:layout_constraintTop_toBottomOf="@+id/main_recycler_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

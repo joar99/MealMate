@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MealMate</string>
+    <string-array name="diettype">
+        <item>balanced</item>
+        <item>high-fiber</item>
+        <item>high-protein</item>
+        <item>low-carb</item>
+        <item>low-fat</item>
+        <item>low-sodium</item>
+    </string-array>
+    <string-array name="mealtype">
+        <item>Breakfast</item>
+        <item>Dinner</item>
+        <item>Lunch</item>
+        <item>Snack</item>
+        <item>Teatime</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
